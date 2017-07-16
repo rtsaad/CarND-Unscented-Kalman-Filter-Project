@@ -6,6 +6,8 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <list>
+
 
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
@@ -67,6 +69,17 @@ public:
   ///* Sigma point spreading parameter
   double lambda_;
 
+  ///* NIS values for lidar and radar sensors
+  std::list<double> nis_radar_;
+  std::list<double> nis_laser_;
+
+  /**
+   * Choose to print or not the nis values graph
+   * Graph are saved in the same folder with the names:
+   * 1- nis_radar.png 2- nis_laser.png
+   * Requires Gnuplot to print the graph
+   */  
+  bool print_graph_;
 
   /**
    * Constructor
@@ -102,6 +115,12 @@ public:
    * @param meas_package The measurement at k+1
    */
   void UpdateRadar(MeasurementPackage meas_package);
+
+  /**
+   * Print Graph with NIS values
+   * @param sensor Sensor NIS value to print
+   */
+  void PrintNIS(MeasurementPackage::SensorType sensor);
 };
 
 #endif /* UKF_H */
