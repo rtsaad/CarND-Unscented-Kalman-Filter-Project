@@ -72,7 +72,7 @@ Figure 3 shows the UKF estimation using only LIDAR readings. As we expected from
 
 ![alt text][image6]
 
-Finally, Figures 4 and 5 shows the UKF estimation using RADAR and LIDAR readings. For dataset1, the RMSE values of 0.09, 0.08, 0.30 and 0.19 show the high accuracy the Sensor Fusion promotes to estimate the moving object position, velocity and yaw angle. This [video](https://github.com/otomata/CarND-Unscented-Kalman-Filter-Project/blob/master/images/fused.ogv) presents the UKF estimating the object position (green dots).
+Finally, Figures 4 and 5 shows the UKF estimation using RADAR and LIDAR readings. For dataset1, the RMSE values of 0.09, 0.08, 0.30 and 0.19 show the high accuracy the Sensor Fusion promotes to estimate the moving object position, velocity and yaw angle. This [video](https://raw.githubusercontent.com/otomata/CarND-Unscented-Kalman-Filter-Project/master/images/fused.mp4) presents the UKF estimating the object position (green dots).
 
 ![alt text][image1]
 
@@ -96,7 +96,7 @@ Comparing the RMSE values for the UKF with our previous [Extended Kalman Filter]
 
 The UKF implemented here is used at the "Catch the Run Away Car" project (CRAC). The source code for this project is available at [project code](https://github.com/otomata/CarND-Catch-Run-Away-Car-UKF). 
 
-The CRAC project consists of a hunter car chasing a target car using stationary noisy lidar and radar sensors. Our implementation is able to catch the car in less than 4.5 seconds. This [video](https://github.com/otomata/CarND-Unscented-Kalman-Filter-Project/blob/master/images/catch_car.ogv) presents the hunter car capturing the run away car.
+The CRAC project consists of a hunter car chasing a target car using stationary noisy lidar and radar sensors. Our implementation is able to catch the car in less than 4.5 seconds. This [video](https://raw.githubusercontent.com/otomata/CarND-Unscented-Kalman-Filter-Project/master/images/catch_car.mp4) presents the hunter car capturing the run away car.
 
 
 
